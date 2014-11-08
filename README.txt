@@ -1,9 +1,5 @@
-Despa Diana-Alexandra 321CA
+Calculator de buzunar.
 
-Tema 4 - Calculator de buzunar.
-
-	In implementarea temei, am utilizat scheletul de cod atasat enuntului si algoritmul descris in cel de-al doilea link de la referinte, referitor la constructia unui arbore de parsare, cu modificarile de rigoare.
-	
 	Algoritm
 	Folosesc o stiva de operatori si o stiva de operanzi pentru constructia arborelui de parsare.
 	Sirul de caractere primit ca parametru de catre functia eval din clasa ExpressionParser este impartit in token-i. Apoi, fiecare token este verificat daca este operator sau operand. In caz ca este operand, se creeaza un nod cu valoarea lui si cu index-ul token-ului in cadrul sirului si nodul este pus in stiva de operanzi. In caz ca token-ul este operator, se creeaza un nou nod in fuctie de tipul acelui operator cu ajutorul unui factory de noduri (clasa NodeFactory - metoda newNode), avand un index corespunzator. 
